@@ -1,0 +1,1092 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+  text-align: center;
+}
+
+/* General header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(40, 40, 75); /* Light gray background */
+}
+
+/* Left-side icons styling */
+.header-left {
+  display: flex;
+  gap: 10px; /* Space between icons */
+  padding-left: 20px; /* Adds left padding */
+}
+
+.header-left img {
+  width: 30px; /* Adjust size for smaller icons */
+  height: 30px;
+}
+
+/* Right-side contact information */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between contact info and button */
+}
+
+.contact-info {
+  display: flex; /* Puts phone numbers in a row */
+  gap: 30px; /* Adjust gap between the phone numbers */
+}
+
+.contact-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between phone icon and number */
+  color: white;
+}
+
+.contact-info img {
+  width: 20px; /* Adjust size of phone icons */
+  height: 20px;
+  border-radius: 3px;
+}
+
+/* Button styling */
+.button {
+  padding: 10px 20px;
+  background-color: #68b045; /* Button background color */
+  color: white; /* Button text color */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-heading{
+  margin-bottom: -70px;
+}
+
+.image-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+  gap: 28px;
+}
+
+.image-div p{
+  display: flex;
+  gap: 4px;
+}
+.para{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.banner h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  text-align: center;
+  width: 550px;
+  color: white;
+  margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+  .banner p {
+    width: 330px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px;
+  }
+
+  .header-left {
+    justify-content: center;
+    width: 100%; /* Full width for social media icons */
+    padding-left: 0;
+    gap: 5px; /* Reduce gap between icons for mobile */
+  }
+
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Reduce gap between contact info and button */
+    width: 100%; /* Full width for the contact info */
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px; /* Stack phone numbers vertically */
+  }
+
+  .contact-info p {
+    font-size: 14px; /* Smaller font for phone numbers */
+  }
+
+  .button {
+    padding: 10px 16px; /* Smaller button size */
+    font-size: 14px; /* Smaller button text */
+    width: 50%; /* Full width button */
+    text-align: center;
+    margin-left: 60px;
+  }
+
+  /* Adjust icon sizes for mobile */
+  .header-left img,
+  .contact-info img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding to reduce the navbar height */
+  position: relative; /* Important for positioning the menu toggle */
+  z-index: 10; /* Ensure navbar stays above other content */
+}
+
+.logo img {
+  height: 100px; /* Adjust logo size */
+  margin-right: 100px; /* Space between logo and navigation items */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  margin: 0;
+  flex-grow: 1; /* Ensures the nav takes up the remaining space */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+nav ul li {
+  margin: 0 20px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 5px; /* For positioning the hover underline */
+  display: inline-block; /* To apply the underline properly */
+  position: relative;
+}
+
+.menu-toggle {
+  display: none; /* Initially hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333; /* Adjust color as needed */
+  margin: 4px 0;
+}
+
+.black-text1 {
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 1px;
+}
+
+.green-text {
+  color: #68b045;
+  font-size: 3rem;
+}
+
+.portfolio-heading,
+.services-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services-heading p {
+  text-align: center;
+  width: 550px;
+}
+
+.advantage-items {
+  display: flex;
+}
+
+.advantage-item {
+  padding: 20px 20px;
+}
+
+.advantage-item h3 {
+  font-size: 24px;
+}
+
+.advantage-item p {
+  font-size: 15px;
+}
+
+.advantage {
+  border-bottom: 4px solid #808080;
+}
+
+@media (max-width: 768px) {
+  .advantage-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .advantage-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .black-text1 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 1px;
+  }
+
+  .green-text {
+    color: #68b045;
+    font-size: 2rem;
+  }
+  .portfolio-heading p {
+    text-align: center;
+    width: 380px;
+  }
+}
+
+.Art-board {
+  display: flex;
+  padding-left: 20px;
+}
+
+.about-us {
+  padding-top: 25px;
+}
+
+button {
+  background-color: rgb(255, 166, 0);
+  padding: 13px 35px 13px 35px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(255, 123, 0);
+}
+
+@media (max-width: 768px) {
+  .Art-board {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .Art-board2 img {
+    width: 100%;
+    max-width: 750px;
+  }
+}
+
+.service-item {
+  display: flex;
+  gap: 6rem;
+  padding: 20px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service p {
+  text-align: center;
+}
+
+.read a {
+  color: #68b045;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .services-heading p {
+    text-align: center;
+    width: 380px;
+  }
+}
+
+.portfolio {
+  background-color: #333;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-text2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.text-container p {
+  color: white;
+  &:hover {
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+.portfolio-column img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.portfolio-items {
+  grid-template-columns: 4;
+  grid-template-rows: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-heading p {
+  text-align: center;
+  width: 550px;
+  color: white;
+}
+
+@media (max-width: 786px) {
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .portfolio {
+    height: 3000px;
+  }
+  .portfolio-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-heading p {
+    text-align: center;
+    width: 380px;
+  }
+  .portfolio-heading img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+  .black-text2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1px;
+  }
+}
+
+.process {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border-bottom: 4px solid #808080; */
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.step p {
+  font-size: 24px;
+}
+
+.step h6 {
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  margin-top: 1px;
+}
+.process-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.step img {
+  width: 200px;
+  height: 200px;
+}
+
+.process-para {
+  text-align: center;
+  width: 550px;
+}
+
+@media (max-width: 786px) {
+  .process-steps {
+    flex-direction: column;
+  }
+  .process-para {
+    text-align: center;
+    width: 380px;
+  }
+}
+
+.people-about-us {
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-bottom: 4px solid #808080;
+  border-top: 4px solid #808080;
+}
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  width: 50%; /* Two items per row for larger screens */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.person1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.person1 h4 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.person1 p {
+  margin-top: 0px;
+}
+
+.people .person:first-child {
+  border-right: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+
+.people .person:nth-child(2) {
+  border-bottom: 2px solid gray;
+}
+
+.people .person:nth-child(3) {
+  border-right: 2px solid gray;
+}
+
+.people .person:nth-child(4) {
+  border-left: 0px solid gray;
+}
+
+@media (max-width: 768px) {
+  .people {
+    flex-direction: column; /* Stack people vertically */
+    align-items: center;
+  }
+
+  .person {
+    width: 100%; /* Make each person take full width on mobile */
+    justify-content: center;
+    text-align: center;
+    border: none; /* Remove borders on mobile */
+    margin-bottom: 20px; /* Add space between each person */
+  }
+
+  .person img {
+    width: 80px; /* Reduce image size for mobile */
+    margin: 0 auto; /* Center the image */
+    padding: 10px 0;
+  }
+
+  .person p {
+    font-size: 14px; /* Adjust text size for mobile */
+    text-align: center; /* Center-align text on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .person img {
+    width: 60px; /* Further reduce image size on very small screens */
+  }
+
+  .person p {
+    font-size: 12px; /* Reduce text size even further for small devices */
+  }
+}
+
+.skills{
+  margin-top: 50px;
+}
+.skill-heading h2 {
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.skill-black-text {
+  color: black;
+  font-weight: bold;
+}
+
+.skill-green-text {
+  color: rgb(3, 172, 3);
+  font-weight: bold;
+}
+
+/* New styles for skills section */
+.skill-circles {
+  display: flex; /* Use flexbox to arrange items in a row */
+  justify-content: center; /* Center the items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+  margin-top: 20px;
+  gap: 38px; /* Add some space above the skill circles */
+}
+
+.step {
+  display: flex;
+  flex-direction: column; /* Align image and text vertically */
+  align-items: center; /* Center the content */
+  /* margin: 0 15px; Add some horizontal spacing between items */
+}
+
+.step img {
+  width: 250px; /* Set a uniform size for all images */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.step p {
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center-align text */
+  font-size: 16px; /* Font size for the skill labels */
+}
+
+.skillp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  margin-left: 420px;
+  text-align: center;
+}
+
+.new-project {
+  margin-top: 80px;
+  background-color: #68b045;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  
+}
+.new-project h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: white;
+}
+
+/* Increase input height */
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 100%; /* Set to full width for mobile devices */
+  max-width: 250px; /* Optional: limit the max width for larger screens */
+  padding: 15px; /* Increase the padding to make the fields taller */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #a19f9f; /* Optional: border style */
+  border-radius: 5px; /* Optional: rounded corners */
+  margin-bottom: 10px; /* Spacing between inputs */
+}
+
+/* Placeholder text style */
+input::placeholder {
+  color: rgb(172, 170, 170); /* Make placeholder text light gray */
+  font-weight: normal; /* Optional: adjust font weight */
+  font-size: 14px; /* Optional: adjust placeholder font size */
+}
+
+/* Button styling */
+button {
+  padding: 15px 30px; /* Increase button padding */
+  background-color: rgb(245, 178, 84); /* Button background color */
+  color: black; /* Button text color */
+  font-weight: bold;
+  border: none; /* Remove all borders */
+  border-bottom: 4px solid red; /* Only bottom border in red */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px;
+  margin-left: 30px; /* Spacing above the button */
+}
+
+.projectp, .our-contactsp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 750px;
+  text-align: center;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+
+  .skillp{
+    margin-left: 30px;
+    width: 550px;
+    text-align: center;
+  }
+
+  .new-project h2 {
+    color: white; /* Set text color to white */
+    font-size: 3rem; /* Set font size to extra large */
+    font-weight: bold; /* Make the font bold */
+    margin-top: 0px;
+  }
+  .new-project {
+    padding: 30px; /* Reduce padding for smaller screens */
+  }
+
+  .projectp{
+    margin-left: 20px;
+    width: 400px;
+  }
+
+  input[type="text"], input[type="email"], input[type= "tel"] {
+    width: 90%; /* Set inputs to 90% width for smaller screens */
+    font-size: 14px; /* Slightly smaller font size for better fit */
+  }
+
+  button {
+    width: 90%; /* Button takes up 90% width for smaller screens */
+  }
+}
+
+.our-contacts h2 {
+    
+  font-size: 3rem; /* Set font size to extra large */
+  font-weight: bold; /* Make the font bold */
+  margin-top: 0px;
+}
+
+.black-text4 {
+  color: black;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.green-text5 {
+  color: rgb(3, 172, 3);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.our-contacts p {
+  margin-top: 50px;
+  line-height: 1.5; /* Improve readability */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+
+  .our-contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-left: 30px;
+  }
+  .image-div{
+    flex-direction: column;
+    gap: 40px;
+  }
+  .para{
+    margin-bottom: 40px;
+  }
+  .our-contacts h2 {
+      font-size: 2rem; /* Reduce font size for smaller screens */
+      margin-top: 20px; /* Adjust margin */
+      text-align: center; /* Center align heading on mobile */
+  }
+
+  .our-contacts p {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+.our-contacts p img {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.our-contactsp{
+  margin-left: 30px;
+  width: 500px;
+}
+
+.our-contacts p span {
+    display: block; /* Each contact info item in its own line */
+    margin: 5px 0; /* Spacing between lines */
+}
+
+  .map {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center align for mobile */
+  }
+
+  .google-map-embed {
+      width: 100%; /* Full width for mobile */
+      height: 200px; /* Reduced height for mobile */
+  }
+}
+
+.our-contactsp, .skillp, .people-about-usp, .processp, .portfolio-headingp {
+  color: rgb(185, 183, 183);
+  text-align: center;
+}
+
+.process h6 {
+  font-size: 0.1rem;
+  color: rgb(185, 183, 183);
+}
+
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.google-map-embed {
+  width: 1500px; /* Original width for larger screens */
+  height: 450px; /* Original height for larger screens */
+  border: 0;
+}
+
+.our-contacts img {
+  width: 25px; /* Default icon size */
+  height: auto;
+  border-radius: 0px;
+  object-fit: cover;
+}
+
+.img-para{
+  display: flex;
+  gap: 16px;
+}
+
+footer {
+  background-color: #538935;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns all sections at the top */
+  flex-wrap: wrap; /* Allows wrapping of content on smaller screens */
+}
+
+.footer-logo {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-logo p {
+  width: 250px;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.services, .useful-links, .contacts-footer {
+  flex: 1;
+  padding-top: 0;
+}
+
+.services {
+  padding-right: 20px;
+}
+
+.useful-links {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts-footer {
+  padding-left: 20px;
+}
+
+.our-contacts{
+  margin-top: 60px;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.services a, .useful-links a {
+  color: white;
+  text-decoration: underline;
+}
+
+.services a:hover, .useful-links a:hover {
+  text-decoration: underline;
+}
+
+.contacts-footer img {
+  width: 25px;
+  height: auto;
+  border-radius: 0;
+}
+
+.contacts-footer p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.contacts-footer img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.followus-footer img {
+  width: 45px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.footer-links:before, .footer-links:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: lightgreen;
+}
+
+.footer-links:before {
+  left: 33%;
+}
+
+.footer-links:after {
+  left: 86%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack footer sections vertically */
+    padding: 20px; /* Reduce padding on mobile */
+  }
+
+  .footer-logo, .footer-links {
+    flex: 1;
+    margin: 0;
+    width: 100%; /* Make each section full width */
+  }
+
+  .footer-links {
+    display: block; /* Stack the sections on top of each other */
+    margin-top: 20px; /* Add space between sections */
+  }
+
+  .services, .useful-links, .contacts-footer {
+    padding: 0;
+    margin-bottom: 20px; /* Space out the links on mobile */
+  }
+
+  .footer-logo img {
+    width: 80px; /* Reduce logo size for mobile */
+  }
+
+  .services a, .useful-links a {
+    font-size: 14px; /* Reduce link size for mobile */
+  }
+
+  .contacts-footer p {
+    font-size: 14px;
+  }
+
+  .followus-footer img {
+    width: 35px; /* Reduce icon size for mobile */
+  }
+
+  .footer-links:before, .footer-links:after {
+    display: none; /* Hide the dividing lines on mobile */
+  }
+}
+
+.author h4 {
+  text-align: center;
+  color: #bbb;
+}
+
+.read-more {
+  margin-top: 20px;
+  padding: 15px 50px; /* Increase button padding */
+  background-color: rgb(245, 178, 84); /* Button background color */
+  color: black; /* Button text color */
+  font-weight: bold;
+  font-size: x-large;
+  border: none; /* Remove all borders */
+  border-bottom: 4px solid red; /* Only bottom border in red */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Show hamburger icon on mobile */
+}
+nav {
+  display: none; /* Hide nav links by default on mobile */
+  flex-direction: column; /* Stack links vertically */
+  position: absolute;
+  top: 100%; /* Adjust position based on your design */
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: white; /* Background color */
+  z-index: 10; /* Ensures it is on top */
+}
+nav.active {
+  display: flex; /* Show nav links when active */
+}
+  .navbar {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .logo img {
+    height: 50px; /* Reduce the size of the logo on mobile */
+  }
+
+  nav ul {
+    display: none; /* Hide navigation items initially */
+    flex-direction: column; /* Stack navigation items */
+    padding-left: 0; /* Remove padding for mobile */
+    width: 100%; /* Full width */
+    position: absolute; /* Position the menu */
+    top: 60px; /* Adjust according to your navbar height */
+    left: 0; /* Align to the left */
+    background-color: white; /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
+    z-index: 10; /* Ensure the dropdown is above other elements */
+  }
+
+  nav.active ul {
+    display: flex; /* Show navigation items when active */
+  }
+
+  .menu-toggle {
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: auto; /* Align toggle to the right */
+  }
+
+  nav ul li a:hover::after {
+    height: 2px; /* Reduce thickness for mobile screens */
+    background-color: #FFA500; /* Maintain color */
+    width: 35%;
+}
+
+nav ul li {
+    padding: 10px 0; /* Add padding to list items for better touch targets */
+}
+}
+
+
+
