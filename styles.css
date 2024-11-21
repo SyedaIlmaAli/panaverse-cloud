@@ -699,6 +699,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: 270px;
   width: 750px;
   text-align: center;
 }
@@ -720,11 +721,6 @@ button {
   }
   .new-project {
     padding: 30px; /* Reduce padding for smaller screens */
-  }
-
-  .projectp{
-    margin-left: 20px;
-    width: 400px;
   }
 
   input[type="text"], input[type="email"], input[type= "tel"] {
@@ -835,7 +831,7 @@ button {
   margin: 20px 0;
 }
 
-.google-map-embed {
+iframe {
   width: 1500px; /* Original width for larger screens */
   height: 450px; /* Original height for larger screens */
   border: 0;

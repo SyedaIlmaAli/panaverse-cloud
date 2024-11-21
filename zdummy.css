@@ -844,6 +844,10 @@
     cursor: pointer; /* Pointer cursor on hover */
     margin-top: 10px; /* Spacing above the button */
   }
+
+  .projectp{
+    margin-left: 270px;
+  }
   
   /* Responsive adjustments for mobile */
   @media (max-width: 600px) {
